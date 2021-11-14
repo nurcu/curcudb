@@ -1,2 +1,2 @@
-# curcudb
+# CurcuDB
 Data model for Curcumy
