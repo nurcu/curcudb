@@ -1,0 +1,43 @@
+@startuml
+
+title Movements
+
+entity positions {
+  * string wallet
+  * string protocol
+  * string asset
+  ----
+  * string assetType
+}
+
+entity transactions {
+  * string txid
+  * string token
+  * string balanceType
+  --
+  * string transactionType
+  * string symbol
+  * money change
+  * money price
+  * money rate
+  * timestamp ts
+}
+
+positions ||--|{ transactions
+
+entity balances {
+  * string txid
+  * string token
+  * string balanceType
+  --
+  * string symbol
+  * money balance
+  * money price
+  * money rate
+  * timestamp ts
+}
+
+positions ||--|{ balances
+
+
+@enduml
