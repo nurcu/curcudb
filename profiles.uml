@@ -1,0 +1,26 @@
+@startuml
+
+title Profiles
+
+entity profiles {
+  * string loginAddress
+  ---
+  * string name
+}
+
+entity profiles.addresses {
+  * string address
+  * string chain
+}
+
+profiles ||--o{ profiles.addresses
+
+entity profiles.addresses.protocols {
+  * string protocol
+}
+
+profiles.addresses ||--o{ profiles.addresses.protocols
+
+
+
+@enduml
