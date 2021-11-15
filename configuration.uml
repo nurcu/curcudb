@@ -1,0 +1,14 @@
+@startuml
+
+title Configuration
+
+entity protocols {
+  * string protocol
+  ---
+  * string chain
+  string endpoint
+  string transform
+}
+
+
+@enduml
