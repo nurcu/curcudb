@@ -33,6 +33,7 @@ entity balances {
   * money balance
   * money price
   * money rate
+    money assetBalance
   * timestamp ts
 }
 
