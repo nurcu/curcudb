@@ -26,7 +26,6 @@ entity transactions {
 positions ||--|{ transactions
 
 entity balances {
-  * string txid
   * string token
   * string balanceType
   --
