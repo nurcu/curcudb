@@ -27,6 +27,7 @@ entity transactions {
 positions ||--|{ transactions
 
 entity balances {
+  * timestamp ts
   * string token
   * string balanceType
   --
@@ -35,7 +36,6 @@ entity balances {
   * money price
   * money rate
     money assetBalance
-  * timestamp ts
 }
 
 positions ||--|{ balances
