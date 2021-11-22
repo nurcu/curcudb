@@ -2,7 +2,7 @@
 
 title Movements
 
-entity positions {
+entity portfolios {
   * string wallet
   * string protocol
   * string asset
@@ -24,7 +24,7 @@ entity transactions {
   * timestamp ts
 }
 
-positions ||--|{ transactions
+portfolios ||--|{ transactions
 
 entity balances {
   * timestamp ts
@@ -38,7 +38,7 @@ entity balances {
     money assetBalance
 }
 
-positions ||--|{ balances
+portfolios ||--|{ balances
 
 
 @enduml
