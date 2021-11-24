@@ -1,0 +1,22 @@
+{
+  "name": "curcudb",
+  "version": "1.0.0",
+  "description": "Curcumy Database Model",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nurcu/curcudb.git"
+  },
+  "author": "Nuriana Forti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nurcu/curcudb/issues"
+  },
+  "homepage": "https://github.com/nurcu/curcudb#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
